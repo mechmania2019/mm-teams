@@ -90,19 +90,6 @@ micro@9.1.0:
     mri "1.1.0"
     raw-body "2.3.2"
 
-microrouter@^3.1.3:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/microrouter/-/microrouter-3.1.3.tgz#1e45df77d3e2d773be5da129cfc7d5e6e6c86f4e"
-  dependencies:
-    url-pattern "^1.0.3"
-
-mm-authenticate@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/mm-authenticate/-/mm-authenticate-0.0.6.tgz#bebb63fa3a358118f0de24b562d84be093168b2c"
-  dependencies:
-    micro "9.1.0"
-    mm-schemas "0.0.6"
-
 mm-schemas@0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/mm-schemas/-/mm-schemas-0.0.6.tgz#61c3a0b676bac36f2d8915bd285ae22fbdda8b08"
@@ -219,10 +206,6 @@ sliced@1.0.1:
 unpipe@1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
-
-url-pattern@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/url-pattern/-/url-pattern-1.0.3.tgz#0409292471b24f23c50d65a47931793d2b5acfc1"
 
 validator@9.4.1:
   version "9.4.1"
