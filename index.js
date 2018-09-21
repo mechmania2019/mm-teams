@@ -16,8 +16,8 @@ module.exports = async (req, res) => {
   );
   var zipped = teams.map(function(team, i) {
     return {
-      "team": team
-      "script":scripts[i]
+      "team": team,
+      "script": scripts[i]
     }
   });
   return zipped;
