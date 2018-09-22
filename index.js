@@ -14,15 +14,5 @@ module.exports = authenticate(async (req, res) => {
     return send(res, 403, "Forbidden");
   }
   console.log("Getting teams");
-  const teams = await Team.find({}).exec();
-  const scripts = await Promise.all(
-    teams.map(team => Script.findById(team.latestScript).exec())
-  );
-  const zipped = teams.map(function(team, i) {
-    return {
-      team: team,
-      script: scripts[i]
-    };
-  });
-  return zipped;
+  return Team.find({}).populate('latestScript').exec();
 });
