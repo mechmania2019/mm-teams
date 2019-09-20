@@ -14,5 +14,5 @@ module.exports = authenticate(async (req, res) => {
     return;
   }
   console.log("Getting teams");
-  send(res, 200, JSON.stringify(await Team.find({}).populate('latestScript').exec()));
+  send(res, 200, JSON.stringify(await Team.find({}).populate('latestScript').populate('mostRecentPush').exec()));
 });
